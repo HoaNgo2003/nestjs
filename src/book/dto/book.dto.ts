@@ -1,3 +1,4 @@
+import { User } from "../../auth/schemas/user.schema"
 import { Category } from "../schemas/book.schema"
 
 export class CreateBookDto{
@@ -6,4 +7,5 @@ export class CreateBookDto{
   readonly author: string
   readonly price: number
   readonly category: Category
+  readonly user: User
 }
